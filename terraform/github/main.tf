@@ -2,6 +2,7 @@ provider "github" {
   token = var.github_token
 }
 
+# https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository
 resource "github_repository" "project" {
   name                   = var.project_name
   description            = var.project_description
