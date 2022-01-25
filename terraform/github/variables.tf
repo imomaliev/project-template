@@ -1,3 +1,8 @@
+variable "github_token" {
+  description = "Github token"
+  type        = string
+}
+
 variable "project_name" {
   description = "Project name"
   type        = string
@@ -18,9 +23,4 @@ variable "project_topics" {
   description = "Project topics"
   type        = list(string)
   default     = []
-}
-
-variable "github_token" {
-  description = "Github token"
-  type        = string
 }

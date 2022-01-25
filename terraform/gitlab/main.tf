@@ -6,7 +6,7 @@ provider "gitlab" {
 resource "gitlab_project" "project" {
   name                                             = var.project_name
   description                                      = var.project_description
-  tags                                             = var.project_tags
+  tags                                             = var.project_topics
   issues_enabled                                   = true
   merge_requests_enabled                           = true
   pipelines_enabled                                = true
