@@ -24,6 +24,9 @@ resource "gitlab_project" "project" {
   # TODO: add a way to setup
   #   - forking_access_level = "disabled"
   #   - analytics_access_level = "disabled"
-  #   - operations_access_level = "disabled"
   #   - security_and_compliance_access_level = "disabled"
+  #   - operations_access_level = "disabled"
+  lifecycle {
+    prevent_destroy = true
+  }
 }

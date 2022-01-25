@@ -15,4 +15,7 @@ resource "github_repository" "project" {
   topics                 = var.project_topics
   vulnerability_alerts   = true
   # TODO: add a way to setup https://docs.github.com/en/rest/reference/repos#enable-automated-security-fixes
+  lifecycle {
+    prevent_destroy = true
+  }
 }
